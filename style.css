@@ -291,6 +291,10 @@ img[data-img]::before, img[data-img]::after{ content:none; }
 .nav.header-minimal .nav-back-home{ display:inline-flex; }
 
 @media (max-width: 760px){
+  /* backdrop-filter sur le header crée un "containing block" qui piège le
+     panneau .nav-links (position:fixed) dans la zone du header au lieu de
+     l'écran entier — on le retire en mobile, le fond étant déjà opaque à 90%. */
+  .nav{ backdrop-filter: none; -webkit-backdrop-filter: none; background: rgba(247,241,230,0.97); }
   .nav-links{
     position:fixed; top:0; right:0; height:100vh; width:min(82vw, 340px);
     background: var(--cream); flex-direction:column; align-items:flex-start;
@@ -305,20 +309,22 @@ img[data-img]::before, img[data-img]::after{ content:none; }
   .nav.header-minimal .nav-burger{ display:none; }
 
   .nav-editions{ width:100%; }
-  .nav-editions-trigger{ font-size:1.1rem; width:100%; justify-content:space-between; }
+  .nav-editions-trigger{ font-size:1.1rem; width:100%; justify-content:space-between; padding:0.4rem 0; min-height:44px; }
   .nav-editions-menu{
-    position:static; transform:none; width:100%; opacity:1; visibility:visible; pointer-events:auto;
-    box-shadow:none; border:none; background:transparent; padding:0.4rem 0 0; height:0; overflow:hidden;
-    transition: height 0.25s ease;
+    position:static; transform:none; width:100%; opacity:1; visibility:visible; pointer-events:none;
+    box-shadow:none; border:none; background:transparent; padding:0.4rem 0 0;
+    max-height:0; overflow:hidden;
+    transition: max-height 0.28s ease;
   }
   .nav-editions-menu::before{ display:none; }
-  .nav-editions.is-open .nav-editions-menu{ height:auto; }
+  .nav-editions.is-open .nav-editions-menu{ max-height:420px; pointer-events:auto; }
+  .nav-editions-menu a{ min-height:44px; }
 
   .nav-backdrop{
     display:none;
     position: fixed; inset: 0;
     background: rgba(46,38,32,0.45);
-    z-index: 100;
+    z-index: 99;
   }
   body.nav-open .nav-backdrop{ display:block; }
   .nav-links{ z-index: 101; }
