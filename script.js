@@ -226,95 +226,95 @@ let previousRoute = null;
    -------------------------------------------------------------------------- */
 const IMAGES = {
   // Logo hero accueil
-  heroLogo: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/Photo%201%20modif.png",
+  heroLogo: "https://instant-collecte.fr/assets/accueil/Photo%201%20modif.png",
 
   // Accueil — titre "Comment ça fonctionne ?" flanqué des 3 mini boosters
-  titleBoostersArt: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/icones/3%20mini%20booster.jpeg",
+  titleBoostersArt: "https://instant-collecte.fr/assets/icones/3%20mini%20booster.jpeg",
 
   // Accueil — icônes des 4 mini-étapes
-  stepIconCamera:    "https://frozenfuzer.github.io/Instant-Collect-V2/assets/icones/Vignette%201%20appareil%20photo.jpeg",
-  stepIconVignettes: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/icones/Vignette%202%20carte%20en%20d%C3%A9sordre.jpeg",
-  stepIconBoosters:  "https://frozenfuzer.github.io/Instant-Collect-V2/assets/icones/Vignette%203%203%20mini%20booster.jpeg",
-  stepIconLivre:     "https://frozenfuzer.github.io/Instant-Collect-V2/assets/icones/Vignette%204%20livret.jpeg",
+  stepIconCamera:    "https://instant-collecte.fr/assets/icones/Vignette%201%20appareil%20photo.jpeg",
+  stepIconVignettes: "https://instant-collecte.fr/assets/icones/Vignette%202%20carte%20en%20d%C3%A9sordre.jpeg",
+  stepIconBoosters:  "https://instant-collecte.fr/assets/icones/Vignette%203%203%20mini%20booster.jpeg",
+  stepIconLivre:     "https://instant-collecte.fr/assets/icones/Vignette%204%20livret.jpeg",
 
   // Accueil — booster mystère interactif
-  boosterPackArt: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/Booster%20Ete%202026%20sans%20Fond.png",
-  boosterCard1:   "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/Mini%20image%20booster%20mystere%20Famille.jpeg",
-  boosterCard2:   "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/Mini%20image%20booster%20mystere%20Julian%20et%20mami.jpeg",
-  boosterCard3:   "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/Mini%20image%20booster%20mystere%20mariage.jpeg",
+  boosterPackArt: "https://instant-collecte.fr/assets/accueil/Booster%20Ete%202026%20sans%20Fond.png",
+  boosterCard1:   "https://instant-collecte.fr/assets/accueil/Mini%20image%20booster%20mystere%20Famille.jpeg",
+  boosterCard2:   "https://instant-collecte.fr/assets/accueil/Mini%20image%20booster%20mystere%20Julian%20et%20mami.jpeg",
+  boosterCard3:   "https://instant-collecte.fr/assets/accueil/Mini%20image%20booster%20mystere%20mariage.jpeg",
 
   // Vitrine "une collection à découvrir" (accueil, sous le booster interactif)
-  boosterCollEte:    "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/Booster%20Ete%202026%20sans%20Fond.png",
-  boosterCollNormal: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/booster%20normal.png",
-  boosterCollFete:   "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/Booster%20fete.png",
+  boosterCollEte:    "https://instant-collecte.fr/assets/accueil/Booster%20Ete%202026%20sans%20Fond.png",
+  boosterCollNormal: "https://instant-collecte.fr/assets/accueil/booster%20normal.png",
+  boosterCollFete:   "https://instant-collecte.fr/assets/accueil/Booster%20fete.png",
 
   // Accueil — cartes valeurs (photos)
-  valuePhoto1: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/Photo%202.png",
-  valuePhoto2: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/Photo%203%20.png",
-  valuePhoto3: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/Photo%204.jpg",
+  valuePhoto1: "https://instant-collecte.fr/assets/accueil/Photo%202.png",
+  valuePhoto2: "https://instant-collecte.fr/assets/accueil/Photo%203%20.png",
+  valuePhoto3: "https://instant-collecte.fr/assets/accueil/Photo%204.jpg",
 
   // Accueil — grille éditions (à compléter)
-  editionHistoireAmour: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/Photo%204.jpg",
-  editionSouvenirs:     "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/Photo%205.png",
-  editionEte:           "https://frozenfuzer.github.io/Instant-Collect-V2/assets/edition/IMG_9725.jpg",
-  editionKing:          "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/Photo%208.png",
-  editionMariage:       "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/Photo%207.png",
-  editionPeres:         "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/Photo%209.png",
+  editionHistoireAmour: "https://instant-collecte.fr/assets/accueil/Photo%204.jpg",
+  editionSouvenirs:     "https://instant-collecte.fr/assets/accueil/Photo%205.png",
+  editionEte:           "https://instant-collecte.fr/assets/edition/IMG_9725.jpg",
+  editionKing:          "https://instant-collecte.fr/assets/accueil/Photo%208.png",
+  editionMariage:       "https://instant-collecte.fr/assets/accueil/Photo%207.png",
+  editionPeres:         "https://instant-collecte.fr/assets/accueil/Photo%209.png",
 
   // Accueil — ambiance (polaroids)
-  ambiance1: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/Photo%202.png",
-  ambiance2: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/Photo%2010.jpg",
-  ambiance3: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/Photo%209.png",
-  ambiance4: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/Photo%205.png",
+  ambiance1: "https://instant-collecte.fr/assets/accueil/Photo%202.png",
+  ambiance2: "https://instant-collecte.fr/assets/accueil/Photo%2010.jpg",
+  ambiance3: "https://instant-collecte.fr/assets/accueil/Photo%209.png",
+  ambiance4: "https://instant-collecte.fr/assets/accueil/Photo%205.png",
 
   // Accueil — preuve sociale (screenshots)
-  screenshot1: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/PHOTO%2011.PNG",
-  screenshot2: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/PHOTO%2012.PNG",
-  screenshot3: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/PHOTO%2013.PNG",
-  screenshot4: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/PHOTO%2014.PNG",
-  screenshot5: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/PHOTO%2015.jpg",
+  screenshot1: "https://instant-collecte.fr/assets/accueil/PHOTO%2011.PNG",
+  screenshot2: "https://instant-collecte.fr/assets/accueil/PHOTO%2012.PNG",
+  screenshot3: "https://instant-collecte.fr/assets/accueil/PHOTO%2013.PNG",
+  screenshot4: "https://instant-collecte.fr/assets/accueil/PHOTO%2014.PNG",
+  screenshot5: "https://instant-collecte.fr/assets/accueil/PHOTO%2015.jpg",
 
   // Concept — intro nostalgie (collage photos, à remplir dès que les images sont dans assets/concept/)
-  conceptPhoto1: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/concept/Photo%201%20carte%20concept.PNG",
-  conceptPhoto2: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/concept/Photo%202%20carte%20concept.PNG",
-  conceptPhoto3: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/concept/Photo%203%20carte%20concept.PNG",
+  conceptPhoto1: "https://instant-collecte.fr/assets/concept/Photo%201%20carte%20concept.PNG",
+  conceptPhoto2: "https://instant-collecte.fr/assets/concept/Photo%202%20carte%20concept.PNG",
+  conceptPhoto3: "https://instant-collecte.fr/assets/concept/Photo%203%20carte%20concept.PNG",
 
   // Concept — 4 étapes
-  step1: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/concept/Groupement%20de%20photo%20sur%20table.JPG",
-  step2: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/concept/Photo%20concept%202.jpg",
-  step3: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/concept/IMG_9295.PNG",
-  step4: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/concept/IMG_9294.jpg",
+  step1: "https://instant-collecte.fr/assets/concept/Groupement%20de%20photo%20sur%20table.JPG",
+  step2: "https://instant-collecte.fr/assets/concept/Photo%20concept%202.jpg",
+  step3: "https://instant-collecte.fr/assets/concept/IMG_9295.PNG",
+  step4: "https://instant-collecte.fr/assets/concept/IMG_9294.jpg",
 
   // King Jouet
   kingBooster: "", kingShop: "",
 
   // Réalisations sur-mesure
-  realisationJoinzy: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/edition/PHOTO%201%20Joinzy%20(1)%20(1).jpg", realisationEvg: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/edition/IMG_8874.jpg", realisationEntreprise: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/edition/Marina.png", realisationMariage: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/accueil/Photo%207.png",
+  realisationJoinzy: "https://instant-collecte.fr/assets/edition/PHOTO%201%20Joinzy%20(1)%20(1).jpg", realisationEvg: "https://instant-collecte.fr/assets/edition/IMG_8874.jpg", realisationEntreprise: "https://instant-collecte.fr/assets/edition/Marina.png", realisationMariage: "https://instant-collecte.fr/assets/accueil/Photo%207.png",
 
   // Pour toute la Famille
-  meresHero: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/edition/livret%20maelle.JPG",
-  meresPoster: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/edition/PHOTO%201%20Poster%20Famille.jpg",
-  meresPosterHover: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/edition/PHOTO%202%20Poster%20Famille.jpg",
-  meresPosterExtra1: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/edition/PHOTO%203%20Poster%20Famille.jpg",
-  meresLivret: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/edition/PHOTO%201%20album%20Famille.JPG",
-  meresLivretHover: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/edition/PHOTO%202%20album%20Famille.JPG",
+  meresHero: "https://instant-collecte.fr/assets/edition/livret%20maelle.JPG",
+  meresPoster: "https://instant-collecte.fr/assets/edition/PHOTO%201%20Poster%20Famille.jpg",
+  meresPosterHover: "https://instant-collecte.fr/assets/edition/PHOTO%202%20Poster%20Famille.jpg",
+  meresPosterExtra1: "https://instant-collecte.fr/assets/edition/PHOTO%203%20Poster%20Famille.jpg",
+  meresLivret: "https://instant-collecte.fr/assets/edition/PHOTO%201%20album%20Famille.JPG",
+  meresLivretHover: "https://instant-collecte.fr/assets/edition/PHOTO%202%20album%20Famille.JPG",
 
   // Histoire d'Amour
-  valentinHero: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/edition/Photo%20HA%201%20(1).JPG", valentinLivret: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/edition/IMG_9846.JPG",
-  valentinLivretHover: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/edition/Photo%20HA%202.JPG",
-  valentinLivretExtra1: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/edition/IMG_9850%20(1).JPG",
-  valentinLivretExtra2: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/edition/IMG_9852.JPG",
-  valentinPoster: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/edition/IMG_9859.JPG",
-  valentinPosterHover: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/edition/IMG_9860.JPG",
+  valentinHero: "https://instant-collecte.fr/assets/edition/Photo%20HA%201%20(1).JPG", valentinLivret: "https://instant-collecte.fr/assets/edition/IMG_9846.JPG",
+  valentinLivretHover: "https://instant-collecte.fr/assets/edition/Photo%20HA%202.JPG",
+  valentinLivretExtra1: "https://instant-collecte.fr/assets/edition/IMG_9850%20(1).JPG",
+  valentinLivretExtra2: "https://instant-collecte.fr/assets/edition/IMG_9852.JPG",
+  valentinPoster: "https://instant-collecte.fr/assets/edition/IMG_9859.JPG",
+  valentinPosterHover: "https://instant-collecte.fr/assets/edition/IMG_9860.JPG",
 
   // Souvenir d'été
-  etePoster: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/edition/Photo%20poster%20%C3%A9dition%20%C3%A9t%C3%A9%201.JPG",
-  etePosterHover: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/edition/Photo%20poster%20%C3%A9dition%20%C3%A9t%C3%A9%202.jpeg",
-  etePosterExtra1: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/edition/Photo%20poster%20%C3%A9dition%20%C3%89t%C3%A9%203.JPG",
-  eteLivret: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/edition/IMG_9853.JPG",
-  eteLivretHover: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/edition/IMG_9854.JPG",
-  eteLivretExtra: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/edition/IMG_9743.jpg",
-  eteLivretExtra2: "https://frozenfuzer.github.io/Instant-Collect-V2/assets/edition/IMG_9625.jpg",
+  etePoster: "https://instant-collecte.fr/assets/edition/Photo%20poster%20%C3%A9dition%20%C3%A9t%C3%A9%201.JPG",
+  etePosterHover: "https://instant-collecte.fr/assets/edition/Photo%20poster%20%C3%A9dition%20%C3%A9t%C3%A9%202.jpeg",
+  etePosterExtra1: "https://instant-collecte.fr/assets/edition/Photo%20poster%20%C3%A9dition%20%C3%89t%C3%A9%203.JPG",
+  eteLivret: "https://instant-collecte.fr/assets/edition/IMG_9853.JPG",
+  eteLivretHover: "https://instant-collecte.fr/assets/edition/IMG_9854.JPG",
+  eteLivretExtra: "https://instant-collecte.fr/assets/edition/IMG_9743.jpg",
+  eteLivretExtra2: "https://instant-collecte.fr/assets/edition/IMG_9625.jpg",
 };
 
 // Clés à charger immédiatement (au-dessus de la ligne de flottaison)
@@ -460,6 +460,7 @@ const ROUTES = {
   "realisations":   { title: "Un autre projet ? — Réalisations sur-mesure — Instant Collecté", header: "full" },
   "mentions-legales": { title: "Mentions légales — Instant Collecté",                   header: "full" },
   "cgv":              { title: "Conditions Générales de Vente — Instant Collecté",       header: "full" },
+  "merci":            { title: "Merci pour votre commande — Instant Collecté",           header: "minimal" },
   "commande":         { title: "Votre commande — Instant Collecté",                      header: "full" },
   "produit-histoire-d-amour-livret": { title: "Le livret — Édition Histoire d'Amour — Instant Collecté", header: "full" },
   "produit-pour-toute-la-famille-poster": { title: "Le Poster — Édition Pour toute la Famille ! — Instant Collecté", header: "full" },
