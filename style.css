@@ -898,7 +898,7 @@ img[data-img]::before, img[data-img]::after{ content:none; }
 .produit-visual{ height: 240px; background-size: contain; background-position: center; background-repeat: no-repeat; background-color: var(--cream-warm); margin-bottom: 10px; transition: transform 0.4s ease; transform-origin: top center; }
 /* Cartes Poster/Livret des pages éditions : plus de hauteur pour que les
    photos verticales (mockups produit) s'affichent à une taille lisible,
-   sans toucher aux autres cartes produit du site (accueil, partenaires...). */
+   sans toucher aux autres cartes produit du site (accueil...). */
 .edition-detail-grid .produit-visual{ height: 340px; }
 /* Survol : bascule sur une 2e photo (ex. livret ouvert) quand data-img-hover
    est présent. --hover-bg est posée par le JS (voir setImage dans script.js). */
@@ -1103,17 +1103,6 @@ body[data-page="contact"]{ --accent: var(--terracotta); }
 .form-error{ background: #fdf0ef; color: #8b2a22; border: 1px solid #e8b9b5; }
 .form-error a{ color: var(--terracotta); }
 
-/* ===================== NAV — lien Partenaires + bouton contact ===================== */
-.nav-link-partenaires{
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--ink);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-.nav-link-partenaires:hover{ color: var(--terracotta); }
-@media (max-width: 760px){ .nav-link-partenaires{ display:none; } }
-
 /* ===================== CARTES — double bouton ===================== */
 .card-actions{
   display: flex;
@@ -1280,13 +1269,7 @@ body[data-page="contact"]{ --accent: var(--terracotta); }
 .produit-body-icon{ padding-top: 1.5rem; text-align: center; }
 .produit-icon{ font-size: 2.2rem; display: block; margin-bottom: 0.7rem; }
 
-/* ===================== PAGE PARTENAIRES ===================== */
-.hero-partenaires{ min-height: 52vh; }
-.partenaire-section{
-  max-width: 1080px; margin: 0 auto;
-  padding: clamp(2.5rem,5vw,5rem) 1.5rem;
-}
-.partenaire-header{ text-align: center; margin-bottom: 3rem; }
+/* ===================== CLASSES PARTAGÉES (King Jouet) ===================== */
 .co-brand-lockup{
   font-family: var(--font-body);
   font-size: 0.9rem;
@@ -1301,12 +1284,8 @@ body[data-page="contact"]{ --accent: var(--terracotta); }
   margin: 0 0.4rem;
   font-size: 1.1em;
 }
-.partenaire-header .section-title{ margin: 0.5rem 0 1rem; }
 .section-text{ max-width: 60ch; margin: 0 auto; color: var(--ink-soft); font-size: 0.95rem; line-height: 1.7; }
-.partenaire-video-wrap{ margin-bottom: 3rem; }
-.partenaire-produits{ margin-top: 2.5rem; }
 .badge-partenariat{ background: #d4e8f0; color: #1a4a5e; }
-.cta-final-partenaires{ background: var(--cream-warm); }
 
 /* ===================== PAGE CONTACT ===================== */
 .hero-contact{
@@ -1389,34 +1368,6 @@ body[data-page="contact"]{ --accent: var(--terracotta); }
 }
 @media (prefers-reduced-motion: reduce){ .ticker-track{ animation: none; } }
 
-/* ===================== PAGE PARTENAIRES — décorations ===================== */
-.partenaire-section{ position: relative; overflow: hidden; }
-.partenaire-deco{
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-}
-.partenaire-section > *:not(.partenaire-deco){ position: relative; z-index: 1; }
-.pdeco{ position: absolute; }
-.pdeco-leaf-1{ width: clamp(80px,12vw,160px); top: 4%; right: 2%; animation: leafFloat 7s ease-in-out infinite; }
-.pdeco-leaf-2{ width: clamp(60px,8vw,110px); bottom: 8%; left: 3%; animation: leafFloat 9s ease-in-out infinite 2s; }
-.pdeco-circle-1{ width: clamp(100px,15vw,200px); top: -40px; left: 8%; }
-.pdeco-circle-2{ width: clamp(140px,20vw,280px); bottom: -60px; right: 5%; }
-.pdeco-stamp{ width: clamp(50px,7vw,80px); top: 30%; left: 6%; animation: leafFloat 8s ease-in-out infinite 1s; }
-.pdeco-flower{ width: clamp(55px,8vw,90px); top: 20%; right: 8%; animation: flowerSpin 18s linear infinite; }
-.pdeco-dot-grid{ width: clamp(80px,10vw,130px); bottom: 15%; right: 12%; opacity: 0.7; }
-
-/* ===================== CTA PARTENAIRES — fond sombre lisible ===================== */
-.cta-final-partenaires{
-  background: #6B4F3A !important;
-}
-.cta-final-partenaires .cta-final-title{
-  color: #fff !important;
-}
-.cta-final-partenaires .cta-final-text{
-  color: rgba(255,255,255,0.80) !important;
-}
 .btn-light{
   background: var(--cream);
   color: var(--ink);
@@ -1430,9 +1381,6 @@ body[data-page="contact"]{ --accent: var(--terracotta); }
   box-shadow: 0 8px 20px rgba(46,38,32,0.22);
 }
 
-/* ===================== HERO PARTENAIRES — fond légèrement renforcé ===================== */
-.hero-partenaires .hero-tagline{ color: var(--ink); }
-.hero-partenaires .edition-title{ color: var(--ink); }
 /* ===================== PREUVE SOCIALE — carousel ===================== */
 @keyframes sp-sway {
   0%, 100% { transform: rotate(-5deg) translateY(0); }
