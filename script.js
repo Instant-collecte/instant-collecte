@@ -285,9 +285,6 @@ const IMAGES = {
   step3: "https://instant-collecte.fr/assets/concept/IMG_9295.PNG",
   step4: "https://instant-collecte.fr/assets/concept/IMG_9294.jpg",
 
-  // King Jouet
-  kingBooster: "", kingShop: "",
-
   // Réalisations sur-mesure
   realisationJoinzy: "https://instant-collecte.fr/assets/edition/PHOTO%201%20Joinzy%20(1)%20(1).jpg", realisationEvg: "https://instant-collecte.fr/assets/edition/IMG_8874.jpg", realisationEntreprise: "https://instant-collecte.fr/assets/edition/Marina.png", realisationMariage: "https://instant-collecte.fr/assets/accueil/Photo%207.png",
 
@@ -451,7 +448,6 @@ const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)
 const ROUTES = {
   "accueil":        { title: "Instant Collecté — Le souvenir qu'on déballe, qu'on offre", header: "full" },
   "concept":        { title: "Comment ça marche — Instant Collecté", header: "full" },
-  "king-jouet":     { title: "Partenariat King Jouet — Instant Collecté", header: "minimal" },
   "pour-toute-la-famille": { title: "Édition Pour toute la Famille ! — Instant Collecté", header: "full" },
   "histoire-d-amour": { title: "Édition Histoire d'Amour — Instant Collecté", header: "full" },
   "contact":        { title: "Nous contacter — Instant Collecté",                     header: "full" },
@@ -505,7 +501,6 @@ function renderRoute(){
   document.title = config.title;
 
   siteHeader.classList.toggle("header-minimal", config.header === "minimal");
-  if (siteFooter) siteFooter.classList.toggle("footer-minimal", route === "king-jouet");
 
   document.querySelectorAll("[data-route-link]").forEach((link) => {
     link.classList.toggle("is-active", link.dataset.routeLink === route);
