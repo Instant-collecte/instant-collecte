@@ -40,7 +40,6 @@
 
 body[data-page="pour-toute-la-famille"], body[data-page="produit-pour-toute-la-famille-poster"], body[data-page="produit-pour-toute-la-famille-livret"]{ --accent:#D4728A; --accent-soft:#F5D5DC; --accent-dark:#B85A72; }
 body[data-page="histoire-d-amour"], body[data-page="produit-histoire-d-amour-poster"], body[data-page="produit-histoire-d-amour-livret"]{ --accent:#A8425A; --accent-soft:#F0D4D8; --accent-dark:#7E2F42; }
-body[data-page="king-jouet"]{ --accent:#2F6FA3; --accent-soft:#CFE3F0; --accent-dark:#234F75; }
 body[data-page="souvenir-ete"], body[data-page="produit-souvenir-ete-poster"], body[data-page="produit-souvenir-ete-livret"]{ --accent:#4A8FA6; --accent-soft:#BDD8E4; --accent-dark:#2D6878; }
 
 *{ margin:0; padding:0; box-sizing:border-box; }
@@ -286,7 +285,7 @@ img[data-img]::before, img[data-img]::after{ content:none; }
 .ne-text strong{ font-size:0.92rem; font-weight:600; color: var(--ink); display:flex; align-items:center; }
 .ne-text small{ font-size:0.78rem; color: var(--ink-soft); }
 
-/* mode minimal (King Jouet) */
+/* mode minimal (header réduit) */
 .nav.header-minimal .nav-links,
 .nav.header-minimal .nav-burger{ display:none; }
 .nav.header-minimal .nav-back-home{ display:inline-flex; }
@@ -1199,23 +1198,6 @@ body[data-page="contact"]{ --accent: var(--terracotta); }
   .ete-video-deco{ display: none; }
 }
 
-/* ===================== DÉCORATIONS VIDÉO — page King Jouet ===================== */
-.video-embed-wrap-king{ position: relative; }
-.king-video-deco{
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  overflow: visible;
-}
-.video-embed-wrap-king .video-placeholder{ position: relative; z-index: 1; }
-.kvd{ position: absolute; }
-.kvd-star-1{ width: clamp(18px,2.5vw,26px); top: 6%; left: 16%; animation: leafFloat 7s ease-in-out infinite; }
-.kvd-star-2{ width: clamp(28px,3.5vw,38px); bottom: 10%; right: 6%; animation: leafFloat 9s ease-in-out infinite 0.5s; }
-.kvd-block{ width: clamp(38px,5vw,52px); bottom: 6%; left: 4%; animation: leafFloat 10s ease-in-out infinite 1s; }
-@media (max-width: 700px){
-  .king-video-deco{ display: none; }
-}
 .video-placeholder-inner{
   position: absolute; inset: 0;
   display: flex; flex-direction: column;
@@ -1269,23 +1251,7 @@ body[data-page="contact"]{ --accent: var(--terracotta); }
 .produit-body-icon{ padding-top: 1.5rem; text-align: center; }
 .produit-icon{ font-size: 2.2rem; display: block; margin-bottom: 0.7rem; }
 
-/* ===================== CLASSES PARTAGÉES (King Jouet) ===================== */
-.co-brand-lockup{
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-  margin-bottom: 0.6rem;
-}
-.co-brand-x{
-  color: var(--terracotta);
-  margin: 0 0.4rem;
-  font-size: 1.1em;
-}
 .section-text{ max-width: 60ch; margin: 0 auto; color: var(--ink-soft); font-size: 0.95rem; line-height: 1.7; }
-.badge-partenariat{ background: #d4e8f0; color: #1a4a5e; }
 
 /* ===================== PAGE CONTACT ===================== */
 .hero-contact{
