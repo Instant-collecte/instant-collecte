@@ -456,7 +456,6 @@ const ROUTES = {
   "histoire-d-amour": { title: "Édition Histoire d'Amour — Instant Collecté", header: "full" },
   "contact":        { title: "Nous contacter — Instant Collecté",                     header: "full" },
   "souvenir-ete":   { title: "Édition Souvenir d'été — Instant Collecté",            header: "full" },
-  "partenaires":    { title: "Nos Partenaires — Instant Collecté",                     header: "full" },
   "realisations":   { title: "Un autre projet ? — Réalisations sur-mesure — Instant Collecté", header: "full" },
   "mentions-legales": { title: "Mentions légales — Instant Collecté",                   header: "full" },
   "cgv":              { title: "Conditions Générales de Vente — Instant Collecté",       header: "full" },
@@ -780,7 +779,7 @@ if (boosterPack && boosterReveal){
    8) Apparitions au scroll (marquées) — ré-armées à chaque changement de page
    -------------------------------------------------------------------------- */
 let revealObserver = null;
-const REVEAL_SELECTOR = ".page.is-active .values .value, .page.is-active .step-mini, .page.is-active .produit-card, .page.is-active .concept-step-row, .page.is-active .feature-band, .page.is-active .polaroid, .page.is-active .faq-item, .page.is-active .section-header, .page.is-active .partenaire-header, .page.is-active .video-embed-wrap, .page.is-active .contact-card, .page.is-active .contact-form-wrap, .page.is-active .concept-nostalgie-text";
+const REVEAL_SELECTOR = ".page.is-active .values .value, .page.is-active .step-mini, .page.is-active .produit-card, .page.is-active .concept-step-row, .page.is-active .feature-band, .page.is-active .polaroid, .page.is-active .faq-item, .page.is-active .section-header, .page.is-active .video-embed-wrap, .page.is-active .contact-card, .page.is-active .contact-form-wrap, .page.is-active .concept-nostalgie-text";
 
 function setupReveal(){
   if (prefersReducedMotion) return;
