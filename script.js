@@ -661,12 +661,14 @@ if (navBurger && navLinksPanel){
     const isOpen = navLinksPanel.classList.toggle("is-open");
     navBurger.setAttribute("aria-expanded", String(isOpen));
     document.body.classList.toggle("nav-open", isOpen);
+    if (!isOpen) closeEditions();
   });
   navLinksPanel.querySelectorAll("a, .nav-cta").forEach((el) => {
     el.addEventListener("click", () => {
       navLinksPanel.classList.remove("is-open");
       navBurger.setAttribute("aria-expanded", "false");
       document.body.classList.remove("nav-open");
+      closeEditions();
     });
   });
   const navBackdrop = document.getElementById("navBackdrop");
@@ -675,6 +677,7 @@ if (navBurger && navLinksPanel){
       navLinksPanel.classList.remove("is-open");
       navBurger.setAttribute("aria-expanded", "false");
       document.body.classList.remove("nav-open");
+      closeEditions();
     });
   }
 }
