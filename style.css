@@ -317,7 +317,12 @@ img[data-img]::before, img[data-img]::after{ content:none; }
     transition: max-height 0.28s ease;
   }
   .nav-editions-menu::before{ display:none; }
-  .nav-editions.is-open .nav-editions-menu{ max-height:420px; pointer-events:auto; }
+  /* transform:none est obligatoire ici : la règle desktop
+     `.nav-editions.is-open .nav-editions-menu` (translateX(-50%)) a une
+     spécificité supérieure à `.nav-editions-menu` de cette media query et
+     écrasait donc son transform:none, décalant le menu hors du panneau
+     mobile et tronquant les libellés des éditions. */
+  .nav-editions.is-open .nav-editions-menu{ max-height:420px; pointer-events:auto; transform: none; }
   .nav-editions-menu a{ min-height:44px; }
 
   .nav-backdrop{
