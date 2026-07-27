@@ -629,7 +629,14 @@ img[data-img]::before, img[data-img]::after{ content:none; }
      serait perdue) avec une compensation proportionnée. */
   .boosters-fan-item-1{ margin-right:-1rem; transform: rotate(-9deg) translateY(10px); }
   .boosters-fan-item-3{ margin-left:-1rem; }
-  .boosters-fan-item-1 .boosters-fan-art{ transform: scale(1.05); }
+  /* Le PNG Été est cadré plus large que les 2 autres packs (marge transparente
+     autour du visuel) : à hauteur de boîte égale, son contenu visible est plus
+     petit. Le desktop compense avec scale(1.35) ; le 1.05 mobile était trop
+     faible, d'où un booster visuellement plus petit que les deux autres.
+     transform-origin: bottom center (hérité de .boosters-fan-item) garantit que
+     l'agrandissement se fait vers le haut : le bas ne bouge pas, l'alignement
+     corrigé juste au-dessus est donc préservé. */
+  .boosters-fan-item-1 .boosters-fan-art{ transform: scale(1.25); }
 }
 
 /* ===================== VALUES (accueil) ===================== */
