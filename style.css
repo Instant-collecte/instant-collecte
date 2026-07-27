@@ -622,7 +622,12 @@ img[data-img]::before, img[data-img]::after{ content:none; }
 @media (max-width: 620px){
   .boosters-fan-item{ height: clamp(130px,32vw,170px); }
   .boosters-fan-art{ max-width: clamp(100px,26vw,140px); }
-  .boosters-fan-item-1{ margin-right:-1rem; }
+  /* Le transform desktop (translateY(60px), ligne ~614) compense le padding
+     transparent du PNG Été couplé au scale(1.35). En mobile le scale tombe à
+     1.05 : les 60px deviennent un décalage vers le bas nettement visible.
+     On redéfinit donc le transform complet ici (rotation comprise, sinon elle
+     serait perdue) avec une compensation proportionnée. */
+  .boosters-fan-item-1{ margin-right:-1rem; transform: rotate(-9deg) translateY(10px); }
   .boosters-fan-item-3{ margin-left:-1rem; }
   .boosters-fan-item-1 .boosters-fan-art{ transform: scale(1.05); }
 }
