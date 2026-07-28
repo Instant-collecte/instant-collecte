@@ -289,7 +289,7 @@ const IMAGES = {
   realisationJoinzy: "https://instant-collecte.fr/assets/edition/PHOTO%201%20Joinzy%20(1)%20(1).jpg", realisationEvg: "https://instant-collecte.fr/assets/edition/IMG_8874.jpg", realisationEntreprise: "https://instant-collecte.fr/assets/edition/Marina.png", realisationMariage: "https://instant-collecte.fr/assets/accueil/Photo%207.png",
 
   // Pour toute la Famille
-  meresHero: "https://instant-collecte.fr/assets/edition/livret%20maelle.JPG",
+  meresHero: "https://instant-collecte.fr/assets/edition/Photo%20%C3%A0%20la%20place%20de%20verove.PNG",
   meresPoster: "https://instant-collecte.fr/assets/edition/PHOTO%201%20Poster%20Famille.jpg",
   meresPosterHover: "https://instant-collecte.fr/assets/edition/PHOTO%202%20Poster%20Famille.jpg",
   meresPosterExtra1: "https://instant-collecte.fr/assets/edition/PHOTO%203%20Poster%20Famille.jpg",
