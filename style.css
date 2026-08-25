@@ -1134,7 +1134,7 @@ body[data-page="contact"]{ --accent: var(--terracotta); }
 }
 .card-actions .btn{ flex: 1; min-width: 0; text-align: center; font-size: 0.85rem; padding: 0.6rem 0.8rem; }
 .card-actions-center{ justify-content: center; }
-.card-actions-center .btn{ flex: 0 0 auto; }
+.card-actions-center .btn{ flex: 0 0 auto; min-width: 200px; }
 .card-bientot-label{ color: var(--terracotta); font-weight: 600; }
 .produit-card-autre .card-actions{ margin-top: auto; }
 @media (max-width: 480px){ .card-actions{ flex-direction: column; } .card-actions .btn{ flex: none; width: 100%; } }
