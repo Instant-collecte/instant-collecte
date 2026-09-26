@@ -983,6 +983,13 @@ initPdpGallery();
 
     if (isFormspree) {
       try {
+        // ---> AJOUT : Copie silencieuse vers Make <---
+        fetch("https://hook.eu1.make.com/ob8k76dmnhrin6l2iy7a6rvpwzzn5fep", {
+          method: "POST",
+          body: new FormData(form)
+        }).catch(err => console.error("Erreur Make", err));
+
+        // Envoi normal vers Formspree (inchangé)
         const res = await fetch(action, { method:"POST", body:new FormData(form), headers:{"Accept":"application/json"} });
         if (res.ok) { form.reset(); if (successBox) successBox.hidden = false; }
         else throw new Error();
