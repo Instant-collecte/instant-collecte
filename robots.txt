@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://instant-collecte.fr/sitemap.xml
+Sitemap: https://www.instant-collecte.fr/sitemap.xml
