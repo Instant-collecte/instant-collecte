@@ -226,92 +226,92 @@ let previousRoute = null;
    -------------------------------------------------------------------------- */
 const IMAGES = {
   // Logo hero accueil
-  heroLogo: "https://instant-collecte.fr/assets/accueil/Photo%201%20modif.png",
+  heroLogo: "https://www.instant-collecte.fr/assets/accueil/Photo%201%20modif.png",
 
   // Accueil — titre "Comment ça fonctionne ?" flanqué des 3 mini boosters
-  titleBoostersArt: "https://instant-collecte.fr/assets/icones/3%20mini%20booster.jpeg",
+  titleBoostersArt: "https://www.instant-collecte.fr/assets/icones/3%20mini%20booster.jpeg",
 
   // Accueil — icônes des 4 mini-étapes
-  stepIconCamera:    "https://instant-collecte.fr/assets/icones/Vignette%201%20appareil%20photo.jpeg",
-  stepIconVignettes: "https://instant-collecte.fr/assets/icones/Vignette%202%20carte%20en%20d%C3%A9sordre.jpeg",
-  stepIconBoosters:  "https://instant-collecte.fr/assets/icones/Vignette%203%203%20mini%20booster.jpeg",
-  stepIconLivre:     "https://instant-collecte.fr/assets/icones/Vignette%204%20livret.jpeg",
+  stepIconCamera:    "https://www.instant-collecte.fr/assets/icones/Vignette%201%20appareil%20photo.jpeg",
+  stepIconVignettes: "https://www.instant-collecte.fr/assets/icones/Vignette%202%20carte%20en%20d%C3%A9sordre.jpeg",
+  stepIconBoosters:  "https://www.instant-collecte.fr/assets/icones/Vignette%203%203%20mini%20booster.jpeg",
+  stepIconLivre:     "https://www.instant-collecte.fr/assets/icones/Vignette%204%20livret.jpeg",
 
   // Accueil — booster mystère interactif
-  boosterPackArt: "https://instant-collecte.fr/assets/accueil/Booster%20Ete%202026%20sans%20Fond.png",
-  boosterCard1:   "https://instant-collecte.fr/assets/accueil/Mini%20image%20booster%20mystere%20Famille.jpeg",
-  boosterCard2:   "https://instant-collecte.fr/assets/accueil/Mini%20image%20booster%20mystere%20Julian%20et%20mami.jpeg",
-  boosterCard3:   "https://instant-collecte.fr/assets/accueil/Mini%20image%20booster%20mystere%20mariage.jpeg",
+  boosterPackArt: "https://www.instant-collecte.fr/assets/accueil/Booster%20Ete%202026%20sans%20Fond.png",
+  boosterCard1:   "https://www.instant-collecte.fr/assets/accueil/Mini%20image%20booster%20mystere%20Famille.jpeg",
+  boosterCard2:   "https://www.instant-collecte.fr/assets/accueil/Mini%20image%20booster%20mystere%20Julian%20et%20mami.jpeg",
+  boosterCard3:   "https://www.instant-collecte.fr/assets/accueil/Mini%20image%20booster%20mystere%20mariage.jpeg",
 
   // Vitrine "une collection à découvrir" (accueil, sous le booster interactif)
-  boosterCollEte:    "https://instant-collecte.fr/assets/accueil/Booster%20Ete%202026%20sans%20Fond.png",
-  boosterCollNormal: "https://instant-collecte.fr/assets/accueil/booster%20normal.png",
-  boosterCollFete:   "https://instant-collecte.fr/assets/accueil/Booster%20fete.png",
+  boosterCollEte:    "https://www.instant-collecte.fr/assets/accueil/Booster%20Ete%202026%20sans%20Fond.png",
+  boosterCollNormal: "https://www.instant-collecte.fr/assets/accueil/booster%20normal.png",
+  boosterCollFete:   "https://www.instant-collecte.fr/assets/accueil/Booster%20fete.png",
 
   // Accueil — cartes valeurs (photos)
-  valuePhoto1: "https://instant-collecte.fr/assets/accueil/Photo%202.png",
-  valuePhoto2: "https://instant-collecte.fr/assets/accueil/Photo%203%20.png",
-  valuePhoto3: "https://instant-collecte.fr/assets/accueil/Photo%204.jpg",
+  valuePhoto1: "https://www.instant-collecte.fr/assets/accueil/Photo%202.png",
+  valuePhoto2: "https://www.instant-collecte.fr/assets/accueil/Photo%203%20.png",
+  valuePhoto3: "https://www.instant-collecte.fr/assets/accueil/Photo%204.jpg",
 
   // Accueil — grille éditions (à compléter)
-  editionHistoireAmour: "https://instant-collecte.fr/assets/accueil/Photo%204.jpg",
-  editionSouvenirs:     "https://instant-collecte.fr/assets/accueil/Photo%205.png",
-  editionEte:           "https://instant-collecte.fr/assets/edition/IMG_9725.jpg",
-  editionKing:          "https://instant-collecte.fr/assets/accueil/Photo%208.png",
-  editionMariage:       "https://instant-collecte.fr/assets/accueil/Photo%207.png",
-  editionPeres:         "https://instant-collecte.fr/assets/accueil/Photo%209.png",
+  editionHistoireAmour: "https://www.instant-collecte.fr/assets/accueil/Photo%204.jpg",
+  editionSouvenirs:     "https://www.instant-collecte.fr/assets/accueil/Photo%205.png",
+  editionEte:           "https://www.instant-collecte.fr/assets/edition/IMG_9725.jpg",
+  editionKing:          "https://www.instant-collecte.fr/assets/accueil/Photo%208.png",
+  editionMariage:       "https://www.instant-collecte.fr/assets/accueil/Photo%207.png",
+  editionPeres:         "https://www.instant-collecte.fr/assets/accueil/Photo%209.png",
 
   // Accueil — ambiance (polaroids)
-  ambiance1: "https://instant-collecte.fr/assets/accueil/Photo%202.png",
-  ambiance2: "https://instant-collecte.fr/assets/accueil/Photo%2010.jpg",
-  ambiance3: "https://instant-collecte.fr/assets/accueil/Photo%209.png",
-  ambiance4: "https://instant-collecte.fr/assets/accueil/Photo%205.png",
+  ambiance1: "https://www.instant-collecte.fr/assets/accueil/Photo%202.png",
+  ambiance2: "https://www.instant-collecte.fr/assets/accueil/Photo%2010.jpg",
+  ambiance3: "https://www.instant-collecte.fr/assets/accueil/Photo%209.png",
+  ambiance4: "https://www.instant-collecte.fr/assets/accueil/Photo%205.png",
 
   // Accueil — preuve sociale (screenshots)
-  screenshot1: "https://instant-collecte.fr/assets/accueil/PHOTO%2011.PNG",
-  screenshot2: "https://instant-collecte.fr/assets/accueil/PHOTO%2012.PNG",
-  screenshot3: "https://instant-collecte.fr/assets/accueil/PHOTO%2013.PNG",
-  screenshot4: "https://instant-collecte.fr/assets/accueil/PHOTO%2014.PNG",
-  screenshot5: "https://instant-collecte.fr/assets/accueil/PHOTO%2015.jpg",
+  screenshot1: "https://www.instant-collecte.fr/assets/accueil/PHOTO%2011.PNG",
+  screenshot2: "https://www.instant-collecte.fr/assets/accueil/PHOTO%2012.PNG",
+  screenshot3: "https://www.instant-collecte.fr/assets/accueil/PHOTO%2013.PNG",
+  screenshot4: "https://www.instant-collecte.fr/assets/accueil/PHOTO%2014.PNG",
+  screenshot5: "https://www.instant-collecte.fr/assets/accueil/PHOTO%2015.jpg",
 
   // Concept — intro nostalgie (collage photos, à remplir dès que les images sont dans assets/concept/)
-  conceptPhoto1: "https://instant-collecte.fr/assets/concept/Photo%201%20carte%20concept.PNG",
-  conceptPhoto2: "https://instant-collecte.fr/assets/concept/Photo%202%20carte%20concept.PNG",
-  conceptPhoto3: "https://instant-collecte.fr/assets/concept/Photo%203%20carte%20concept.PNG",
+  conceptPhoto1: "https://www.instant-collecte.fr/assets/concept/Photo%201%20carte%20concept.PNG",
+  conceptPhoto2: "https://www.instant-collecte.fr/assets/concept/Photo%202%20carte%20concept.PNG",
+  conceptPhoto3: "https://www.instant-collecte.fr/assets/concept/Photo%203%20carte%20concept.PNG",
 
   // Concept — 4 étapes
-  step1: "https://instant-collecte.fr/assets/concept/Groupement%20de%20photo%20sur%20table.JPG",
-  step2: "https://instant-collecte.fr/assets/concept/Photo%20concept%202.jpg",
-  step3: "https://instant-collecte.fr/assets/concept/IMG_9295.PNG",
-  step4: "https://instant-collecte.fr/assets/concept/IMG_9294.jpg",
+  step1: "https://www.instant-collecte.fr/assets/concept/Groupement%20de%20photo%20sur%20table.JPG",
+  step2: "https://www.instant-collecte.fr/assets/concept/Photo%20concept%202.jpg",
+  step3: "https://www.instant-collecte.fr/assets/concept/IMG_9295.PNG",
+  step4: "https://www.instant-collecte.fr/assets/concept/IMG_9294.jpg",
 
   // Réalisations sur-mesure
-  realisationJoinzy: "https://instant-collecte.fr/assets/edition/PHOTO%201%20Joinzy%20(1)%20(1).jpg", realisationEvg: "https://instant-collecte.fr/assets/edition/IMG_8874.jpg", realisationEntreprise: "https://instant-collecte.fr/assets/edition/Marina.png", realisationMariage: "https://instant-collecte.fr/assets/accueil/Photo%207.png",
+  realisationJoinzy: "https://www.instant-collecte.fr/assets/edition/PHOTO%201%20Joinzy%20(1)%20(1).jpg", realisationEvg: "https://www.instant-collecte.fr/assets/edition/IMG_8874.jpg", realisationEntreprise: "https://www.instant-collecte.fr/assets/edition/Marina.png", realisationMariage: "https://www.instant-collecte.fr/assets/accueil/Photo%207.png",
 
   // Pour toute la Famille
-  meresHero: "https://instant-collecte.fr/assets/edition/Photo%20%C3%A0%20la%20place%20de%20verove.PNG",
-  meresPoster: "https://instant-collecte.fr/assets/edition/PHOTO%201%20Poster%20Famille.jpg",
-  meresPosterHover: "https://instant-collecte.fr/assets/edition/PHOTO%202%20Poster%20Famille.jpg",
-  meresPosterExtra1: "https://instant-collecte.fr/assets/edition/PHOTO%203%20Poster%20Famille.jpg",
-  meresLivret: "https://instant-collecte.fr/assets/edition/PHOTO%201%20album%20Famille.JPG",
-  meresLivretHover: "https://instant-collecte.fr/assets/edition/PHOTO%202%20album%20Famille.JPG",
+  meresHero: "https://www.instant-collecte.fr/assets/edition/Photo%20%C3%A0%20la%20place%20de%20verove.PNG",
+  meresPoster: "https://www.instant-collecte.fr/assets/edition/PHOTO%201%20Poster%20Famille.jpg",
+  meresPosterHover: "https://www.instant-collecte.fr/assets/edition/PHOTO%202%20Poster%20Famille.jpg",
+  meresPosterExtra1: "https://www.instant-collecte.fr/assets/edition/PHOTO%203%20Poster%20Famille.jpg",
+  meresLivret: "https://www.instant-collecte.fr/assets/edition/PHOTO%201%20album%20Famille.JPG",
+  meresLivretHover: "https://www.instant-collecte.fr/assets/edition/PHOTO%202%20album%20Famille.JPG",
 
   // Histoire d'Amour
-  valentinHero: "https://instant-collecte.fr/assets/edition/Photo%20HA%201%20(1).JPG", valentinLivret: "https://instant-collecte.fr/assets/edition/IMG_9846.JPG",
-  valentinLivretHover: "https://instant-collecte.fr/assets/edition/Photo%20HA%202.JPG",
-  valentinLivretExtra1: "https://instant-collecte.fr/assets/edition/IMG_9850%20(1).JPG",
-  valentinLivretExtra2: "https://instant-collecte.fr/assets/edition/IMG_9852.JPG",
-  valentinPoster: "https://instant-collecte.fr/assets/edition/IMG_9859.JPG",
-  valentinPosterHover: "https://instant-collecte.fr/assets/edition/IMG_9860.JPG",
+  valentinHero: "https://www.instant-collecte.fr/assets/edition/Photo%20HA%201%20(1).JPG", valentinLivret: "https://www.instant-collecte.fr/assets/edition/IMG_9846.JPG",
+  valentinLivretHover: "https://www.instant-collecte.fr/assets/edition/Photo%20HA%202.JPG",
+  valentinLivretExtra1: "https://www.instant-collecte.fr/assets/edition/IMG_9850%20(1).JPG",
+  valentinLivretExtra2: "https://www.instant-collecte.fr/assets/edition/IMG_9852.JPG",
+  valentinPoster: "https://www.instant-collecte.fr/assets/edition/IMG_9859.JPG",
+  valentinPosterHover: "https://www.instant-collecte.fr/assets/edition/IMG_9860.JPG",
 
   // Souvenir d'été
-  etePoster: "https://instant-collecte.fr/assets/edition/Photo%20poster%20%C3%A9dition%20%C3%A9t%C3%A9%201.JPG",
-  etePosterHover: "https://instant-collecte.fr/assets/edition/Photo%20poster%20%C3%A9dition%20%C3%A9t%C3%A9%202.jpeg",
-  etePosterExtra1: "https://instant-collecte.fr/assets/edition/Photo%20poster%20%C3%A9dition%20%C3%89t%C3%A9%203.JPG",
-  eteLivret: "https://instant-collecte.fr/assets/edition/IMG_9853.JPG",
-  eteLivretHover: "https://instant-collecte.fr/assets/edition/IMG_9854.JPG",
-  eteLivretExtra: "https://instant-collecte.fr/assets/edition/IMG_9743.jpg",
-  eteLivretExtra2: "https://instant-collecte.fr/assets/edition/IMG_9625.jpg",
+  etePoster: "https://www.instant-collecte.fr/assets/edition/Photo%20poster%20%C3%A9dition%20%C3%A9t%C3%A9%201.JPG",
+  etePosterHover: "https://www.instant-collecte.fr/assets/edition/Photo%20poster%20%C3%A9dition%20%C3%A9t%C3%A9%202.jpeg",
+  etePosterExtra1: "https://www.instant-collecte.fr/assets/edition/Photo%20poster%20%C3%A9dition%20%C3%89t%C3%A9%203.JPG",
+  eteLivret: "https://www.instant-collecte.fr/assets/edition/IMG_9853.JPG",
+  eteLivretHover: "https://www.instant-collecte.fr/assets/edition/IMG_9854.JPG",
+  eteLivretExtra: "https://www.instant-collecte.fr/assets/edition/IMG_9743.jpg",
+  eteLivretExtra2: "https://www.instant-collecte.fr/assets/edition/IMG_9625.jpg",
 };
 
 // Clés à charger immédiatement (au-dessus de la ligne de flottaison)
